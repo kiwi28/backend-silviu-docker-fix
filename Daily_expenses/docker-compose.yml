@@ -1,0 +1,27 @@
+version: "3"
+
+services:
+  db:
+    image: postgres:14.1  
+    expose:
+      - "5432"
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=postgres
+  app:
+    command: >
+      bash -c "python manage.py migrate &&
+               python manage.py runserver 0.0.0.0:8000 --settings=web_project.settings"
+    build: .
+    working_dir: /var/task
+    volumes:
+      - .:/var/task
+    env_file:
+      - development.env
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db

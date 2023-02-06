@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <br>
+
+        <h2>Thank you for your accesing our services <b>{{ data.email }}</b>!</h2>
+        <h2>Your user monthly statistics:</h3>
+
+        <h3>Balance sheet & User Details:</h2>
+        <table style="table-layout: fixed;
+        width: 100%;
+        border-collapse: collapse;
+        border: 3px solid purple;">
+            <thead>
+                <tr>
+                    <th>1 day</th>
+                    <th>Last 7 days</th>
+                    <th>Last 30 days</th>
+                    <th>Most Popular Category</th>
+                    <th>Invested the most in</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                    <tr>
+                        <td style="text-align: center">{{ data.balance_sheet.last_1_day.price__sum }}</td>
+                        <td style="text-align: center">{{ data.balance_sheet.last_7_days.price__sum }}</td>
+                        <td style="text-align: center">{{ data.balance_sheet.last_30_days.price__sum }}</td>
+                        <td style="text-align: center">{{ data.most_popular_category }}</td>
+                        <td style="text-align: center">{{ data.invested_the_most_in }}</td>
+                    </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

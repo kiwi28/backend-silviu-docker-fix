@@ -1,0 +1,8 @@
+0000000000000000000000000000000000000000 d07fb65cb78e5c3706698066a198222e2746109e kiwi28 <alexkiwi.2011@gmail.com> 1675682600 +0200	clone: from github.com:BytexSoftwareServices/bench-silviu-daily-expenses-backend.git
+d07fb65cb78e5c3706698066a198222e2746109e 355fbe7c47f86ffd072eaa395b8812b69557ee79 kiwi28 <alexkiwi.2011@gmail.com> 1675682612 +0200	checkout: moving from main to master
+355fbe7c47f86ffd072eaa395b8812b69557ee79 355fbe7c47f86ffd072eaa395b8812b69557ee79 kiwi28 <alexkiwi.2011@gmail.com> 1675688973 +0200	reset: moving to HEAD
+355fbe7c47f86ffd072eaa395b8812b69557ee79 d07fb65cb78e5c3706698066a198222e2746109e kiwi28 <alexkiwi.2011@gmail.com> 1675688979 +0200	checkout: moving from master to main
+d07fb65cb78e5c3706698066a198222e2746109e 355fbe7c47f86ffd072eaa395b8812b69557ee79 kiwi28 <alexkiwi.2011@gmail.com> 1675689093 +0200	checkout: moving from main to master
+355fbe7c47f86ffd072eaa395b8812b69557ee79 355fbe7c47f86ffd072eaa395b8812b69557ee79 kiwi28 <alexkiwi.2011@gmail.com> 1675702359 +0200	checkout: moving from master to alexandru-local
+355fbe7c47f86ffd072eaa395b8812b69557ee79 7c514ec1136dc26dccc1b904eff79e1970705595 kiwi28 <alexkiwi.2011@gmail.com> 1675702382 +0200	commit: docker fix postgress config
+7c514ec1136dc26dccc1b904eff79e1970705595 355fbe7c47f86ffd072eaa395b8812b69557ee79 kiwi28 <alexkiwi.2011@gmail.com> 1675702523 +0200	checkout: moving from alexandru-local to master

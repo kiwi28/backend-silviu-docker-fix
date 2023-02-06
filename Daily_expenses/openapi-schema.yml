@@ -1,0 +1,66 @@
+info:
+  description: ''
+  title: ''
+  version: ''
+openapi: 3.0.0
+paths:
+  /expenses/:
+    get:
+      operationId: expenses_list
+      tags:
+      - expenses
+    post:
+      operationId: expenses_create
+      tags:
+      - expenses
+  /expenses/{id}/:
+    delete:
+      operationId: expenses_delete
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          description: A unique integer value identifying this expenses.
+          title: ID
+          type: integer
+      tags:
+      - expenses
+    get:
+      operationId: expenses_read
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          description: A unique integer value identifying this expenses.
+          title: ID
+          type: integer
+      tags:
+      - expenses
+    patch:
+      operationId: expenses_partial_update
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          description: A unique integer value identifying this expenses.
+          title: ID
+          type: integer
+      tags:
+      - expenses
+    put:
+      operationId: expenses_update
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          description: A unique integer value identifying this expenses.
+          title: ID
+          type: integer
+      tags:
+      - expenses
+servers:
+- url: ''

@@ -1,0 +1,16 @@
+Architecture:
+Web framework: Django
+Database: PostgresQL
+Docker: local environment 3 docker containers Django , postgresl and Redis(TBD)
+Endpoints:
+# django auth middleware
+register/
+login/
+logout/
+transactions/  GET, POST, PUT/PATCH, DELETE
+statistics/
+DB:
+user - out of the box django. To add the daily_limit column.
+transactions -
+Redis:
+statistics TBD
